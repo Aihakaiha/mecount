@@ -110,91 +110,91 @@ def readFiles(file, extension):
     extension = extension.lower()
     if extension in accepted_formats:
         if extension == accepted_formats[0] or extension == accepted_formats[1]:
-            with open(file, "r")as f:
+            with open(file, "r", encoding="ascii", errors="surrogateescape")as f:
                 f = f.read()
-                html_lines += len(open(file).read().splitlines())
-                total_lines += len(open(file).read().splitlines())
+                html_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
+                total_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
                 
                 for _ in f:
                     html_count = html_count + 1
                     count = count + 1
         if extension == accepted_formats[2]:
-            with open(file, "r")as f:
+            with open(file, "r", encoding="ascii", errors="surrogateescape")as f:
                 f = f.read()
-                css_lines += len(open(file).read().splitlines())
-                total_lines += len(open(file).read().splitlines())
+                css_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
+                total_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
 
                 for _ in f:
                     css_count = css_count + 1
                     count = count + 1
         if extension == accepted_formats[3]:
-            with open(file, "r")as f:
+            with open(file, "r", encoding="ascii", errors="surrogateescape")as f:
                 f = f.read()
-                js_lines += len(open(file).read().splitlines())
-                total_lines += len(open(file).read().splitlines())
+                js_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
+                total_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
 
                 for _ in f:
                     js_count = js_count + 1
                     count = count + 1
         if extension == accepted_formats[4] or extension == accepted_formats[5]:
-            with open(file, "r")as f:
+            with open(file, "r", encoding="ascii", errors="surrogateescape")as f:
                 f = f.read()
-                python_lines += len(open(file).read().splitlines())
-                total_lines += len(open(file).read().splitlines())
+                python_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
+                total_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
 
                 for _ in f:
                     python_count = python_count + 1
                     count = count + 1
         if extension == accepted_formats[6]:
-            with open(file, "r")as f:
+            with open(file, "r", encoding="ascii", errors="surrogateescape")as f:
                 f = f.read()
-                csharp_lines += len(open(file).read().splitlines())
-                total_lines += len(open(file).read().splitlines())
+                csharp_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
+                total_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
 
                 for _ in f:
                     csharp_count = csharp_count + 1
                     count = count + 1
         if extension == accepted_formats[7]:
-            with open(file, "r")as f:
+            with open(file, "r", encoding="ascii", errors="surrogateescape")as f:
                 f = f.read()
-                cpp_lines += len(open(file).read().splitlines())
-                total_lines += len(open(file).read().splitlines())
+                cpp_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
+                total_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
 
                 for _ in f:
                     cpp_count = cpp_count + 1
                     count = count + 1
         if extension == accepted_formats[8]:
-            with open(file, "r")as f:
+            with open(file, "r", encoding="ascii", errors="surrogateescape")as f:
                 f = f.read()
-                c_lines += len(open(file).read().splitlines())
-                total_lines += len(open(file).read().splitlines())
+                c_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
+                total_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
 
                 for _ in f:
                     c_count = c_count + 1
                     count = count + 1
         if extension == accepted_formats[9]:
-            with open(file, "r")as f:
+            with open(file, "r", encoding="ascii", errors="surrogateescape")as f:
                 f = f.read()
-                java_lines += len(open(file).read().splitlines())
-                total_lines += len(open(file).read().splitlines())
+                java_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
+                total_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
 
                 for _ in f:
                     java_count = java_count + 1
                     count = count + 1
         if extension == accepted_formats[10]:
-            with open(file, "r")as f:
+            with open(file, "r", encoding="ascii", errors="surrogateescape")as f:
                 f = f.read()
-                plain_lines += len(open(file).read().splitlines())
-                total_lines += len(open(file).read().splitlines())
+                plain_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
+                total_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
 
                 for _ in f:
                     plain_count = plain_count + 1
                     count = count + 1
         if extension == accepted_formats[11]:
-            with open(file, "r") as f:
+            with open(file, "r", encoding="ascii", errors="surrogateescape") as f:
                 f = f.read()
-                batch_lines += len(open(file).read().splitlines())
-                total_lines += len(open(file).read().splitlines())
+                batch_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
+                total_lines += len(open(file, "r", encoding="ascii", errors="surrogateescape").read().splitlines())
 
                 for _ in f:
                     batch_count = batch_count + 1
